@@ -2,6 +2,11 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
+machine: 
+  node:
+    version: 9
+  npm:
+    version: 5
 deployment:
 staging:
   branch: master
