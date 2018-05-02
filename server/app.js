@@ -3,7 +3,9 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
-mongoose.connect('mongodb://localhost/my-blog');
+let uri = process.env.MONGODB_URI || 'mongodb://localhost/my-blog';
+
+mongoose.connect(uri);
 mongoose.Promise = Promise;
 
 const app = express();
