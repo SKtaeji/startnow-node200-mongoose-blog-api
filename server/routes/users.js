@@ -43,7 +43,7 @@ router.delete("/:id", (req, res) => {
       })
       .catch(err => res.status(400).send(err.message));
   } else {
-    res.status(404).send("No ID sent as param");
+    res.status(404).send("No ID sent as params");
   }
 });
 
