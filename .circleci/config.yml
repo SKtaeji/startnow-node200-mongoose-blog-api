@@ -33,7 +33,11 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
         
-      # run tests!
-      - run: npm test
+      - deployment:
+          staging:
+            branch: master
+            heroku:
+              appname: node200-node200-mongoose-blog-api
+
 
 
