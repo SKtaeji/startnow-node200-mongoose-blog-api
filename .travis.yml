@@ -12,4 +12,11 @@ cache:
 install:
 - npm install
 script:
-- npm start
+- npm test
+deploy:
+  provider: heroku
+  api_key:
+    secure: mkRiId/BDrYfkva79A9BfG5n9sfVzWks/b9aDezOrdZYtB3QvbU7xyK16Y66mHW/4oUUAkejkmV0stGVysVtBzJD+to1aEjy3SqlhiT52SwhwUAwlwF1oYPaEmfp+Atm862tJPTFatPyc3cocYgi3UJ0MrOD+ZVQBPD/hi2JrculN4F9tJsxFC4vOjNraRvJ4pSMStaz5Gih8iG3YQ9DrngswALhcMWidDoHPa2ztORgWbFN/WlI87z2UCuR6xCI09m+ibzqoOS7bc7joYGqQMm4FZwxHdMFaMlXKZnxVjPxwwisYGDzhWPZVHYfBWIkU9rOY2n6pi3HldxGUL4yhIYrcVX1kQPAShOx5P45s27+A3pDRfnAor/OL1jlU2XSIo1rEzAvqkodpGfjyVwaWMrRLEYGd78bGspZiazqD1UfVggnCAy8azeueBqaoI5IWJA5KOWlv57bZBRH7ptRpCH/TiyJHi5l5qYkeSHF6/XU2lgd7fFwK4beCVGCzXCJwJSht9ibIq+j1QrpZkNav6ICOlPb0/TWSFfnowiU0yZmXDKe8NGpDfUULV007hS9RdGB65AXKaPu120yzoPRn0Qyg/AnxpONzX4Rm4mwEs7itQkI17GtrSrAWvEYGT1KXyQwoCQu+C4J+YhyS1h9bRPFzN+RDpv6JVVOUzrRXPU=
+  app: startnow-node200-mongoose-blog-api
+  on:
+    repo: SKtaeji/startnow-node200-mongoose-blog-api
